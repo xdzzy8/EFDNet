@@ -1,0 +1,23 @@
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ./dataset # dataset root dir
+# train: dataset_demo_rate1.0_split1024_gap200/images #images   # train images (relative to 'path') 
+# val: dataset_demo_rate1.0_split1024_gap200/images #images  # val images (relative to 'path') 
+# test: dataset_demo_rate1.0_split1024_gap200/images  #images # test images (optional)
+path: /data2/ZZL/Datasets/fair1m/ # dataset root dir
+train: train/images #images   # train images (relative to 'path') 
+val: val/images #images  # val images (relative to 'path') 
+test: val/images  #images # test images (optional)
+
+# Classes
+nc: 37  # number of classes
+names: ['Roundabout', 'Small_Car', 'Van', 'Dump_Truck', 'Intersection', 'Cargo_Truck', 'other-vehicle', 'Baseball_Field', 'Motorboat', 'other-airplane', 
+        'A220', 'A350', 'Boeing747', 'Boeing737', 'Boeing777', 'Dry_Cargo_Ship', 'Boeing787', 'other-ship', 'Bridge', 'Tennis_Court', 
+        'Liquid_Cargo_Ship', 'Passenger_Ship', 'Fishing_Boat', 'A330', 'A321', 'Trailer', 'Football_Field', 'Bus', 'Engineering_Ship', 'Warship', 
+        'Basketball_Court', 'Tugboat', 'C919', 'ARJ21', 'Excavator', 'Truck_Tractor', 'Tractor'
+        ]  # class names
+
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip

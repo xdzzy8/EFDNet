@@ -1,0 +1,23 @@
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ./dataset # dataset root dir
+# train: dataset_demo_rate1.0_split1024_gap200/images #images   # train images (relative to 'path') 
+# val: dataset_demo_rate1.0_split1024_gap200/images #images  # val images (relative to 'path') 
+# test: dataset_demo_rate1.0_split1024_gap200/images  #images # test images (optional)
+path: /media/yangxilab/NewDisk2/ZZL/MAR20/ # dataset root dir
+train: data/train.txt #images   # train images (relative to 'path') 
+val: data/train.txt #images  # val images (relative to 'path') 
+test: data/test.txt  #images # test images (optional)
+
+# Classes
+nc: 20  # number of classes
+names: ['A1', 'A2', 'A3', 'A4', 'A5',
+        'A6', 'A7', 'A8', 'A9', 'A10',
+        'A11', 'A12', 'A13', 'A14', 'A15',
+        'A16', 'A17', 'A18', 'A19', 'A20',
+        ]  # class names
+
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip
